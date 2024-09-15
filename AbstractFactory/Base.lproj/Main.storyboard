@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AbstractFactory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AbstractFactory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Order Kichen"/>
                                 <connections>
-                                    <action selector="orderKichenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzP-Fl-E4i"/>
+                                    <action selector="orderKichenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kF-l8-qzH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-k2-bja">
@@ -48,6 +48,9 @@
                                 <rect key="frame" x="125.66666666666669" y="638.66666666666663" width="142" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Order Bedroom"/>
+                                <connections>
+                                    <action selector="orderBedroomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="725-Zb-Z1P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,9 +66,6 @@
                             <constraint firstItem="k76-dj-d6g" firstAttribute="top" secondItem="74B-jc-Owo" secondAttribute="bottom" constant="8" symbolic="YES" id="l8r-5C-NvU"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="orderBedroomTapped" destination="tHf-gb-cRg" id="RDv-KN-88i"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

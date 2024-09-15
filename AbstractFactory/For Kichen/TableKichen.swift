@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Kichen table type implementation
 class TableKichen: Table {
     var name: String {
        return "Table"

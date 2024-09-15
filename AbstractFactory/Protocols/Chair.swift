@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// General Interface for any type of Chair
 protocol Chair {
     var name: String { get }
     var description: String { get }

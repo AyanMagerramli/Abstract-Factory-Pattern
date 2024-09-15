@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Bedroom chair type implementation
 class ChairBedroom: Chair {
     var name: String {
        return "Chair"

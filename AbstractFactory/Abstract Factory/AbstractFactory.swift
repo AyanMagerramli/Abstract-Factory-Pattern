@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Our general abstract factory interface
 protocol AbstractFactory {
     func createChair () -> Chair
     func createTable () -> Table

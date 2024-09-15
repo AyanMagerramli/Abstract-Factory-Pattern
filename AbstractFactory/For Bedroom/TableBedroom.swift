@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Bedroom table type implementation
 class TableBedroom: Table {
     var name: String {
        return "Table"

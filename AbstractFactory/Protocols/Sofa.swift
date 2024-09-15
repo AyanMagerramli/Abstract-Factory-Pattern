@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// General Interface for any type of Sofa
 protocol Sofa {
     var name: String { get }
     var description: String { get }

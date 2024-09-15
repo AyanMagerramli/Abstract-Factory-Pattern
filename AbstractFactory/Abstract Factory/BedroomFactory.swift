@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Bedroom type furniture creation
 class BedroomFactory: AbstractFactory {
     func createChair() -> Chair {
         print (ChairBedroom().description)

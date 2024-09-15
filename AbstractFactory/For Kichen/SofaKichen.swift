@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Kichen sofa type implementation
 class SofaKichen: Sofa {
     var name: String {
        return "Sofa"

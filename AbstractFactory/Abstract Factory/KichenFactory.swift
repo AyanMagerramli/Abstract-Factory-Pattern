@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Concrete Kichen type furniture creation
 class KichenFactory: AbstractFactory {
     func createChair() -> Chair {
         print (ChairKichen().description)

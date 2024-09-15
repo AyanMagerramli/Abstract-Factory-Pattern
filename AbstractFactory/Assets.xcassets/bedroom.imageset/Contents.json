@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "imm-artikel-schlaf-headerbild_m24_full_m36_1025.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

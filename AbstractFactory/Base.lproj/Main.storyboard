@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AbstractFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kichen" translatesAutoresizingMaskIntoConstraints="NO" id="74B-jc-Owo">
+                                <rect key="frame" x="65" y="109" width="263" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="u1f-lN-YJt"/>
+                                    <constraint firstAttribute="height" constant="186" id="zJV-Wl-e75"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k76-dj-d6g">
+                                <rect key="frame" x="134" y="303" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Order Kichen"/>
+                                <connections>
+                                    <action selector="orderKichenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzP-Fl-E4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-k2-bja">
+                                <rect key="frame" x="149.66666666666666" y="968.66666666666663" width="94" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bedroom"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="tHf-gb-cRg">
+                                <rect key="frame" x="65" y="438" width="263" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="980-Vv-5Ou"/>
+                                    <constraint firstAttribute="height" constant="183" id="FQs-vi-ptF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-0C-2Pb">
+                                <rect key="frame" x="125.66666666666669" y="638.66666666666663" width="142" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Order Bedroom"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tHf-gb-cRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Csz-XD-hKl"/>
+                            <constraint firstItem="tHf-gb-cRg" firstAttribute="top" secondItem="k76-dj-d6g" secondAttribute="bottom" constant="100" id="JTH-na-2K5"/>
+                            <constraint firstItem="k76-dj-d6g" firstAttribute="centerX" secondItem="74B-jc-Owo" secondAttribute="centerX" id="Lsc-oO-Kg0"/>
+                            <constraint firstItem="74B-jc-Owo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nj1-VH-bJL"/>
+                            <constraint firstItem="Tud-0C-2Pb" firstAttribute="top" secondItem="tHf-gb-cRg" secondAttribute="bottom" constant="17.666666666666742" id="QCD-lQ-y9z"/>
+                            <constraint firstItem="Tud-0C-2Pb" firstAttribute="centerX" secondItem="tHf-gb-cRg" secondAttribute="centerX" id="TU2-Sw-ZEM"/>
+                            <constraint firstItem="74B-jc-Owo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="d5s-np-qf2"/>
+                            <constraint firstItem="k76-dj-d6g" firstAttribute="top" secondItem="74B-jc-Owo" secondAttribute="bottom" constant="8" symbolic="YES" id="l8r-5C-NvU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderBedroomTapped" destination="tHf-gb-cRg" id="RDv-KN-88i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bedroom" width="880" height="495"/>
+        <image name="kichen" width="640" height="426"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
